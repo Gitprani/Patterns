@@ -1,0 +1,15 @@
+public static void Print(int n){
+		    for(int i=0;i<n;i++){
+		        for(char j=(char)('E'-i);j<='E';j++){          // just (E-i) to (E) in each row
+		            System.out.print(j);
+		        }
+		        
+		    System.out.println();
+		    }
+		}
+    
+    E
+    DE
+    CDE
+    BCDE
+    ABCDE
