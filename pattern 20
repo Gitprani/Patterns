@@ -1,0 +1,32 @@
+public static void Print1(int n){
+		    for(int i=1;i<=2*n-1;i++){             // n=5, but for the under part 
+		        int stars=i;                  //  intially for upper part(upto n)
+		        int space=(2*n)-(2*i);        //  initially for the upper part
+		        if(i>n){                // for down(below n)
+		            stars=2*n-i;             
+		            space=2*i-(2*n);
+		        }
+		        
+		        for(int j=1;j<=stars;j++){
+		            System.out.print("*");
+		        }
+		        for(int j=1;j<=space;j++){
+		            System.out.print(" ");
+		        }
+		        for(int j=1;j<=stars;j++){
+		            System.out.print("*");
+		        }
+		     System.out.println();
+		   }
+	}
+  
+  *        *
+  **      ** 
+  ***    ***
+  ****  ****
+  **********
+  ****  ****
+  ***    ***
+  **      **
+  *        *
+  
