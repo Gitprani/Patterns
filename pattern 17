@@ -1,0 +1,30 @@
+public static void Print(int n){
+		    for(int i=0;i<n;i++){
+		        for(int j=0;j<n-i-1;j++){
+		            System.out.print(" ");
+		        }
+		        char ch='A';
+		        int breakPt=(2*i+1)/2;                    // this is the breakpoint, from which decrement starts.
+		        for(int j=0;j<2*i+1;j++){
+		            System.out.print(ch);
+		            if(j>=breakPt){                   // after printing, only then dec/inc operation(from breakPT it starts dec)
+		            ch--;
+		            }
+		            else{
+		                ch++;
+		            }
+		            
+		        }
+		        for(int j=0;j<n-i-1;j++){
+		            System.out.print(" ");
+		        }
+		        
+		    System.out.println();
+		    }
+		}
+
+        A  
+       ABA
+      ABCBA
+     ABCDCBA
+    ABCDEDCBA
